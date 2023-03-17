@@ -63,7 +63,8 @@ export function Fainas() {
                     await deleteTodo({
                         url: `/todolist/${currentToDo?.id}`,
                     });
-                    navigate(0);
+                    getTodoList();
+                    currentToDo.id = undefined;
                 toast(texts.deleteTodoSuccess);
                 }}
             />

@@ -34,7 +34,7 @@ export function TodoView({
                     {id !== undefined && (
                         <div className="w-full">
                             <h3 className="font-bold text-2xl p-4 border-b-slate-300 border-b-2">{title}</h3>
-                            <p className="flex font-semibold self-end items-center gap-1 p-4"><span style={{backgroundColor: getColorByValue(category)}} className="flex border h-3 w-3 rounded-full"></span>{ getColorByValue(category) }</p>
+                            <p className="flex font-semibold self-end items-center gap-1 p-4"><span style={{backgroundColor: getColorByValue(category)}} className="flex border h-3 w-3 rounded-full"></span>{ category }</p>
                             <p className="font-semibold text-red-600 p-4">Prazo: {new Date(deadline).toLocaleDateString()}</p>
                             <p className='p-4'>{description}</p>
                             <div className="flex flex-row justify-evenly p-4">
