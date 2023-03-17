@@ -1,0 +1,9 @@
+POST http://localhost:8080/todolist
+Content-Type: application/json
+
+{
+    "title": "Um título qualquer de teste",
+    "description": "Uma descrição qualquer de teste",
+    "deadline": "2024-03-30T18:43:02.798Z",
+    "category": "Uma categoria qualquer de teste"
+}
